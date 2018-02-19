@@ -4,49 +4,55 @@
 	<style>
 	
 	
-body{
-width: 10px;
-color: white;
-background-color:black;
-Font-family: "Comic Sans MS";
-}
+		body{
+		width: 500px;
+		color: white;
+		background-color:black;
+		Font-family: "Comic Sans MS";
+		}
 
-h1{
-color: #00CED1;
-Font-family: "Impact";
-}
-h3{
-color: #00CED1;
-Font-family: "Arial";
-font-size-adjust: 1.25em;
-}
-div {
-font-size: 2em;
-Font-family: "Impact";
-}
-h2{
-color: #ffb100;
-Font-family: "Impact";
-}
-p{
+		#header{
+		color: #00CED1;
+		Font-family: "Impact";
+		
+		}
+			.header1{
+	
+			color: #00CED1;
+			Font-family: "Arial";
+			font-size-adjust: 1.25em;
+			}
+			.header2 {
+	
+			font-size: 2em;
+			Font-family: "Impact";
+			}
+			.header3{
+			width: 50px;
+			color: #ffb100;
+			Font-family: "Impact";
+			}
+		#paragraph{
 
-font-size: 1.1em;
-Font-family: "Times New Roman";
-width:800px;
-height:60px;
-color: white;
-}
+		font-size: 1.1em;
+		Font-family: "Times New Roman";
+		width:500px;
+		height:60px;
+		color: white;
+		}
 
-figure{
-height:350px;
+		figure{
+		height:950px;
+		width: 25px;
 
-}
-a{
-height: 30px;
-}
+		}
+		a{
+		height: 50px;
+		width: 1000px;
+		}
+		
 
-
-</style>
+	</style>
 
 	</head>
 	
@@ -54,24 +60,24 @@ height: 30px;
 		<table>
 			<td>
 				<strong>Hello World!</strong>
-				<h1>Welcome to my Blog!</h1>
-				<h3>A little about me...</h3>
-				<p>I have a cat named jax
+				<h1 id= 'header'>Welcome to my Blog!</h1>
+				<h2 id= 'header2'>A little about me...</h2>
+				<p class = 'paragraph'>I have a cat named jax
 				I also have a dog named percy. I am from Iowa city, IA and a computer science major.
 				I am also on cheville and the house chaplain. I am part of the ACM club. I have a younger brother
 				named Gavin, and an older sister named Anna.</p>
-				<h3>Some of my hobbies are...</h3>
+				<h3 id='header3'>Some of my hobbies are...</h3>
 				<ul>
 				<li>Hanging out with friends</li>
 				<li>Video games</li>
 				<li>programming</li>
 				</ul>
-				<h3>Top favorite movies are...</h3>
+				<div id = 'header3'>Top favorite movies are...</div>
 				<ol>
 				<li>Avatar</li>
 				<li>Django</li>
 				<li>Star Wars: The Empire Strikes Back</li>
-				<h3>Blog Posts!</h3>
+				<h3 id='header3'>Blog Posts!</h3>
 				<a href="https://grantswebprogramming.wordpress.com/2018/01/10/notes-1-10-18/" color="white">Notes 1/10/18</a></br>
 				<a href="https://grantswebprogramming.wordpress.com/2018/01/17/what-is-the-web/">What is the Web?</a></br>
 				<a href="https://grantswebprogramming.wordpress.com/2018/01/19/communication-on-the-web/">Communication on the Web</a></br>
@@ -82,7 +88,7 @@ height: 30px;
 
 				<figure>
 				<img src="cat.jpeg" width="500" height="500">
-				<figcaption>A picture of my cat!</figcaption>
+				<p id = 'paragraph'>A picture of my cat!</p>
 				</figure>
 			</td>
 		</table>
