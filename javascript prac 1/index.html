@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title> A Basic Web Page</title>
+    </head>
+    <body>
+        <p> Some basic text! </p>
+        <p> More Text!</p>
+		<p id="year"></p>
+		<p id="mod"></p>
+		<p id="demo">Retrieved: </p>
+	<script src="info.js"> 
+	d = new Date() ;
+	s = "Retrieved on:"
+	document.getElementById("demo").innerHTML =s+d.toString();
+	</script>
+	
+	
+    </body>
+</html>
