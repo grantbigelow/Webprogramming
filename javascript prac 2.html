@@ -1,0 +1,29 @@
+<html>
+
+<head></head>
+
+<body>
+
+<script>
+
+
+var newName = prompt("Enter a Phrase ");
+function reverse(newName){
+var backwords = '';
+for (var i = newName.length; i >= 0; i--) { 
+    backwords += newName.charAt(i);
+}
+if(backwords === newName){
+	return backwords.fontcolor("blue")+" has length of " + backwords.length;
+}
+else{
+ return backwords+" has length of " + backwords.length;
+}
+}
+document.write(reverse(newName));
+
+</script>
+
+</body>
+</html>
+
