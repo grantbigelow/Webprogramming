@@ -3,7 +3,7 @@
 body{
 	width: 100%;
 	height: 100px;
-	color: white;
+	color: black;
 	background-color:#5ae2b1;
 	Font-family: "Times New Roman";
 		
@@ -38,18 +38,33 @@ body{
 figure{
 		float: left;
 		width:150%;
-		height:100%;
+		
 		position: relative;
 		left: 30px;
+
 }
 figure2{
 		float: left;
 		width:150%;
-		height:100%;
+		
 		position: relative;
 		left: 30px;
-		margin-top:175px;
+
 		margin-left:40px;
+		padding-bottom: 10px;
+        padding-top: 10px;
+}
+ul {
+  counter-reset: myOrderedListItemsCounter;
+}
+ul li {
+  list-style-type: none;
+  position: relative;
+}
+ul li:before {
+  counter-increment: myOrderedListItemsCounter;
+  content: counter(myOrderedListItemsCounter)".";
+  margin-right: 0.5em;
 }
 h1{
 background-color: black;
@@ -71,10 +86,23 @@ background-color: black;
 color:#5ae2b1;
 text-align: left;
 font-size: 20px;
-height:375%;
+padding-left: 20px;
+padding-bottom: 20px;
+ padding-top: 20px;
 }
-
-
+li{
+margin-left:-30px;
+ background-color: black;
+color:#5ae2b1;
+text-align: left;
+font-size: 20px;
+padding-left: 10px;
+padding-bottom: 10px;
+ padding-top: 10px;
+}
+.bg-black:before {
+  background-color: black;
+}
 </style>
 <body>
 <body>
@@ -99,21 +127,60 @@ height:375%;
 		<p>last semester I taught myself how to create simple video games through the
 python library using a library called pygame. The first game I created was called "Sharks and Subs"
 Which had the player control a submarine up and down as they tried to dodge sharks that went left to right 
-across the screen. The sharks would get faster each time they left the screen.	
-</p>
+across the screen. The sharks would get faster each time they left the screen. I also have participated in a ACM Game Jam
+where the goal is to make a game in 24 hours from scratch. It was a fun a learning experience. I also got a prize for best 
+sound in my game.</p>	
+
 <h1>Java Projects</h1>
-<p></p>
+<p>I started learning java In highschool, with AP Computer Science and then this year took two java classes. Some of the 
+programs that I made are simple tic tac Toe game that uses a swing application and a simple black jack game. More recently I've been part
+of a group project that is a strategy game which has the user take over other cells by sending "Troops" to attack an enemy cell while the enemy
+attacks the player cell.</p>
+<h1>Python Projects</h1>
+<p>In addition to Java I also have learned the python library. Some programs that I have worked on was programming my one data structures such as
+a stack. Ive also created programs that act as personal calculaters to help me with my microeconomics homework. I also worked with different libraries
+like the turtle graphics library. Finally I have also worked on a group project where we programmed a text based version of battleship.</p>
+<h1>Experience</h1>
+<ul style="list-style-type:disc">
+	<li class = "bg-black">Can code in java</li>
+	<li>can code in python</li>
+	<li>can code in html</li>
+	<li>have knowlege of different data structures</li>
+	<li>experience with Windows operating system</li>
+	<li>experience with linux operating systems</li>
+	<li>experience with making ethernet chords</li>
+	<li>eperience with building computers</li>
+	<li>Worked as a TA for two semesters for CS classes</li>
+	<li>Involved in the ACM club</li>
+</ul>
+<h1> My Git Hub Page</h1>
+<figure>
+			<img src="git.png" class = "center"width="660" height="425">
+		<figcaption><a href="https://github.com/grantbigelow"color=black>GitHub.com/grantbigelow</a></figcaption>
+		</figure>
+	
+	
+
 </div>
 		<div class="column">
 		<figure>
-			<img src="game.png" class = "center"width="450" height="275">
-	
+			<img src="game.png" class = "center"width="550" height="375">
+			<figcaption>Sharks and Subs starting Menu</figcaption>
+			
 		</figure>
 		<br/>
-		<figure2>
-			<img src="game1.png" class = "center"width="450" height="275">
-	
-		</figure2>
+		<figure>
+			<img src="game1.png" class = "center"width="550" height="375">
+			<figcaption>Sharks and Subs in game</figcaption>
+		</figure>
+		<figure>
+			<img src="game3.png" class = "center"width="550" height="375">
+			<figcaption>Screen Shot of game that was created during the Game Jam</figcaption>
+		</figure>
+		<figure>
+			<img src="game2.png" class = "center"width="550" height="375">
+			<figcaption>Screen Shot of cell game that was created in a java swing application</figcaption>
+		</figure>
 		</div>
 </body>
 </html>
